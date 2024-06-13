@@ -1,15 +1,15 @@
-This is a ASV simulation for passive tracking of a mobile marine target. 
+```bash
+# Prepare the system (ROS 2, Gazebo Garden)
+# Follow instructions from the provided link
 
-To install his package you need ros2 humble and gazebo garden.
-
-https://github.com/osrf/vrx/wiki/preparing_system_tutorial
-
-
-
-Once the system is ready, clone and build this repo. 
-
+# Clone the ASV repository
 mkdir workspace
+cd workspace
 git clone https://github.com/mikemacg10/ISL_ASV.git
 cd ISL_ASV
+
+# Build the ASV package
 colcon build --merge install
+```
+
 
