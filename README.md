@@ -1,6 +1,6 @@
 
 # Prepare the system (ROS 2, Gazebo Garden)
-# Follow instructions from the provided link
+Follow instructions from the provided link
 https://github.com/osrf/vrx/wiki/preparing_system_tutorial
 
 # Clone the ASV repository
