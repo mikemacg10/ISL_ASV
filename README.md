@@ -9,7 +9,7 @@ https://github.com/osrf/vrx/wiki/preparing_system_tutorial
 Once the system is ready, clone and build this repo. 
 
 mkdir workspace
-git clone 
-
+git clone https://github.com/mikemacg10/ISL_ASV.git
+cd ISL_ASV
 colcon build --merge install
 
