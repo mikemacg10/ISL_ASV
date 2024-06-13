@@ -14,7 +14,7 @@ cd ISL_ASV
 colcon build --merge install
 ```
 
-#TO run the simulation:
+# TO run the simulation:
 ```bash
 source install/setup.bash
 ros2 launch vrx_gz competition.launch.py simulation:=BF
