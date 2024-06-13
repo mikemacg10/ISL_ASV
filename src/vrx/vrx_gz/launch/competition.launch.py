@@ -113,7 +113,7 @@ def generate_launch_description():
                         'This must match one of the robots in the config_file'),
         DeclareLaunchArgument(
             'headless',
-            default_value='False',
+            default_value='True',
             description='True to run simulation headless (no GUI). '),
         DeclareLaunchArgument(
             'urdf',

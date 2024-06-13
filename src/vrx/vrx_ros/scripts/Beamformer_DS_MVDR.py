@@ -71,7 +71,7 @@ class DOA_Estimation(Node):
         )
 
 
-        self.signal_send = self.create_timer(10.0, self.simulate_received_signal)
+        self.signal_send = self.create_timer(1.0, self.simulate_received_signal)
 
     def target_pose_callback(self, msg):        
         # Process the received message

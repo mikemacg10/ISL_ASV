@@ -225,7 +225,7 @@ class ParticleFilterNode(Node):
         # Get particle filter's guess of the robot state
         if STATE == 1:
             guess_1 = self.particle_filter.get_average_state_TDOA()
-            with open('/home/michael-asv/vrx_ws/src/vrx/vrx_ros/scripts/poses.csv', 'a') as file:
+            with open('/home/michael-asv/workspace/ISL_ASV/src/vrx/vrx_ros/scripts/BF DATA/poses.csv', 'a') as file:
                 writer = csv.writer(file)
                 if file.tell() == 0:
                     writer.writerow(['Guess X', 'Guess Y', 'Current X', 'Current Y', 'Tracker X', 'Tracker Y', 'Measured X', 'Measured Y'])
@@ -233,7 +233,7 @@ class ParticleFilterNode(Node):
                 writer.writerow([float(guess_1[0]), float(guess_1[1]), float(current[0]), float(current[1]), float(self.tracker_positions[0]), float(self.tracker_positions[1]), float(measurements[0][0]), float(measurements[1][0])])
         else:
             guess_1, guess_2 = self.particle_filter.get_average_state_BF()
-            with open('/home/michael-asv/vrx_ws/src/vrx/vrx_ros/scripts/poses.csv', 'a') as file:
+            with open('/home/michael-asv/workspace/ISL_ASV/src/vrx/vrx_ros/scripts/BF DATA/poses.csv', 'a') as file:
                 writer = csv.writer(file)
                 if file.tell() == 0:
                     writer.writerow(['Guess X', 'Guess Y', 'Guess X', 'Guess Y', 'Current X', 'Current Y', 'Tracker X', 'Tracker Y', 'Measured X', 'Measured Y', 'Measured X', 'Measured Y'])

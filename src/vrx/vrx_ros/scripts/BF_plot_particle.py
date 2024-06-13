@@ -5,7 +5,7 @@ import numpy as np
 
 # Read the CSV file
 #data = pd.read_csv('/home/michael-asv/vrx_ws/src/vrx/vrx_ros/scripts/BF DATA/Error_10%_5m_mmposes.csv')
-data = pd.read_csv('/home/michael-asv/vrx_ws/src/vrx/vrx_ros/scripts/poses.csv')
+data = pd.read_csv('/home/michael-asv/workspace/ISL_ASV/src/vrx/vrx_ros/scripts/BF DATA/poses.csv')
 np_array = data.values
 
 #error in measurement
